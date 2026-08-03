@@ -1,0 +1,75 @@
+
+    /* Premium Smooth Scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Dark Modern Theme Elements */
+    .navbar {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.95) !important;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Hero Carousel Zoom Effect */
+    .carousel-item img {
+      height: 70vh;
+      object-fit: cover;
+      filter: brightness(0.7);
+    }
+
+    /* Card Hover Animations & Shadows */
+    .custom-card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .custom-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(13, 110, 253, 0.15);
+    }
+
+    .custom-card img {
+      transition: transform 0.5s ease;
+    }
+
+    .custom-card:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Banner overlay with glassmorphism */
+    .banner-overlay {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+    }
+
+    .store-img {
+      height: 45px;
+      object-fit: contain;
+      transition: transform 0.2s;
+    }
+
+    .store-img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Section Headings Styling */
+    .section-title {
+      position: relative;
+      padding-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background-color: #0d6efd;
+      border-radius: 2px;
+    }

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Website | Premium Experience</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <style>
+    /* Global Styles */
+    body { font-family: 'Segoe UI', sans-serif; }
+    
+    /* Slider Styles */
+    .carousel-item img { height: 80vh; object-fit: cover; filter: brightness(60%); }
+    
+    /* About Section Styles */
+    #about { padding: 80px 0; background-color: #f8f9fa; }
+    .about-img { border-radius: 20px; transition: 0.4s; }
+    .about-img:hover { transform: scale(1.03); }
+    .feature-box { padding: 20px; transition: 0.3s; }
+    .feature-box:hover { background: #fff; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    
+    /* Album Section Styles */
+    .album-card { transition: 0.4s; border-radius: 15px; overflow: hidden; }
+    .album-card img { height: 250px; object-fit: cover; transition: 0.4s; }
+    .album-card:hover { transform: translateY(-10px); box-shadow: 0 20px 30px rgba(0,0,0,0.2) !important; }
+    .album-card:hover img { transform: scale(1.1); }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary fs-3" href="#"><i class="bi bi-music-note-beamed me-2"></i>Music</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index2.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="index3.html">Albums</a></li>
+          <li class="nav-item"><a class="nav-link" href="index4.html">Trending</a></li>
+        </ul>
+      </div>
+       <form class="d-flex" role="search">
+          <input class="form-control me-2 rounded-pill shadow-sm" type="search" placeholder="Search tracks, artists..." aria-label="Search">
+          <button class="btn btn-primary rounded-pill px-4" type="submit">Search</button>
+        </form>
+    </div>
+  </nav>
+
+  <div id="home" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="banner-2.png" class="d-block w-100" alt="Banner">
+        <div class="carousel-caption d-none d-md-block mb-5">
+          <h1 class="display-3 fw-bold">Feel The Real Rhythm</h1>
+          <p class="lead">Discover thousands of tracks tailored to your vibe.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about" data-aos="fade-up">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4"><img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800" class="img-fluid about-img shadow-lg" alt="About"></div>
+        <div class="col-lg-6 ps-lg-5">
+          <h2 class="display-5 fw-bold mb-4">We Bring Music to Life</h2>
+          <p class="text-muted lead">Our platform provides high-quality streaming and curated playlists for true music lovers.</p>
+          <div class="row mt-4">
+            <div class="col-6 feature-box"><i class="bi bi-music-note-list text-primary fs-2"></i><h5>Curated</h5></div>
+            <div class="col-6 feature-box"><i class="bi bi-headset text-primary fs-2"></i><h5>Hi-Fi</h5></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="albums" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5"><h2 class="fw-bold">Featured Albums</h2></div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in"><div class="card album-card border-0 shadow-sm"><img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=500" class="card-img-top"><div class="card-body"><h5 class="fw-bold">Midnight Echo</h5><a href="#" class="btn btn-primary btn-sm rounded-pill">Listen</a></div></div></div>
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100"><div class="card album-card border-0 shadow-sm"><img src="image-4.jpg" class="card-img-top"><div class="card-body"><h5 class="fw-bold">Urban Beats</h5><a href="#" class="btn btn-primary btn-sm rounded-pill">Listen</a></div></div></div>
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200"><div class="card album-card border-0 shadow-sm"><img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500" class="card-img-top"><div class="card-body"><h5 class="fw-bold">Soul Strings</h5><a href="#" class="btn btn-primary btn-sm rounded-pill">Listen</a></div></div></div>
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300"><div class="card album-card border-0 shadow-sm"><img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=500" class="card-img-top"><div class="card-body"><h5 class="fw-bold">Neon Nights</h5><a href="#" class="btn btn-primary btn-sm rounded-pill">Listen</a></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About/Footer Block Link Section -->
+  <div id="about" class="bg-dark text-white pt-5 pb-4 mt-auto">
+    <div class="container">
+      <div class="row text-center text-md-start g-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold text-primary mb-3">About Us</h5>
+          <p class="small text-light opacity-50 lh-lg">Music is our passion. We create platforms that let artists reach their core fans and listeners find elite sound quality seamlessly.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold text-primary mb-3">Quick Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li class="mb-2"><a href="#home" class="text-light opacity-50 text-decoration-none small"><i class="bi bi-chevron-right me-1"></i>Home</a></li>
+            <li class="mb-2"><a href="#albums" class="text-light opacity-50 text-decoration-none small"><i class="bi bi-chevron-right me-1"></i>Albums</a></li>
+            <li class="mb-2"><a href="#trending" class="text-light opacity-50 text-decoration-none small"><i class="bi bi-chevron-right me-1"></i>Trending</a></li>
+            <li class="mb-2"><a href="#download" class="text-light opacity-50 text-decoration-none small"><i class="bi bi-chevron-right me-1"></i>Download App</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold text-primary mb-3">Follow The Sound</h5>
+          <div class="d-flex justify-content-center justify-content-md-start gap-3">
+            <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="bg-secondary my-4">
+      <div class="text-center small text-light opacity-50">
+        © 2026 Music Website. All rights reserved. Designed with ❤️ for Music Lovers.
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

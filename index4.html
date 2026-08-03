@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Website | Premium Experience</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; }
+    .carousel-item img { height: 80vh; object-fit: cover; filter: brightness(60%); }
+    
+    /* About Section */
+    #about { padding: 80px 0; background-color: #f8f9fa; }
+    .about-img { border-radius: 20px; transition: 0.4s; }
+    
+    /* Album Section */
+    .album-card { transition: 0.4s; border-radius: 15px; overflow: hidden; }
+    .album-card img { height: 250px; object-fit: cover; transition: 0.4s; }
+    .album-card:hover { transform: translateY(-10px); box-shadow: 0 20px 30px rgba(0,0,0,0.2); }
+    
+    /* Trending Section */
+    .list-group-item { transition: 0.3s; border: none; border-bottom: 1px solid #eee; }
+    .list-group-item:hover { background-color: #f1f1f1; cursor: pointer; }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary fs-3" href="#"><i class="bi bi-music-note-beamed me-2"></i>Music</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index2.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index3.html">Albums</a></li>
+          <li class="nav-item"><a class="nav-link" href="index4.html">Trending</a></li>
+        </ul>
+      </div>
+      
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 rounded-pill shadow-sm" type="search" placeholder="Search tracks, artists..." aria-label="Search">
+          <button class="btn btn-primary rounded-pill px-4" type="submit">Search</button>
+        </form>
+    </div>
+  </nav>
+
+  <div id="home" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="banner-2.png" class="d-block w-100" alt="Banner">
+        <div class="carousel-caption d-none d-md-block mb-5">
+          <h1 class="display-3 fw-bold">Feel The Real Rhythm</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="albums" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Featured Albums</h2>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in"><div class="card album-card shadow-sm"><img src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?w=500" class="card-img-top"><div class="card-body"><h5 class="fw-bold">Midnight Echo</h5><button class="btn btn-primary btn-sm">Listen</button></div></div></div>
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100"><div class="card album-card shadow-sm"><img src="image-6.jpg" class="card-img-top"><div class="card-body"><h5 class="fw-bold">Urban Beats</h5><button class="btn btn-primary btn-sm">Listen</button></div></div></div>
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200"><div class="card album-card shadow-sm"><img src="image-5.jpg" class="card-img-top"><div class="card-body"><h5 class="fw-bold">Soul Strings</h5><button class="btn btn-primary btn-sm">Listen</button></div></div></div>
+        <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300"><div class="card album-card shadow-sm"><img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=500" class="card-img-top"><div class="card-body"><h5 class="fw-bold">Neon Nights</h5><button class="btn btn-primary btn-sm">Listen</button></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="trending" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Trending Now</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <ul class="list-group list-group-flush shadow-sm rounded-4">
+            <li class="list-group-item d-flex align-items-center p-3"><span class="me-4 fw-bold text-muted">01</span><img src="image-6.jpg" width="50" class="rounded"><div class="ms-3 flex-grow-1"><h6>Midnight City</h6><small>M83</small></div><button class="btn btn-outline-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button></li>
+            <li class="list-group-item d-flex align-items-center p-3"><span class="me-4 fw-bold text-muted">02</span><img src="image-4.jpg" width="50" class="rounded"><div class="ms-3 flex-grow-1"><h6>Starboy</h6><small>The Weeknd</small></div><button class="btn btn-outline-primary btn-sm rounded-circle"><i class="bi bi-play-fill"></i></button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- About/Footer Block Link Section -->
+  <div id="about" class="bg-dark text-white pt-5 pb-4 mt-auto">
+    <div class="container">
+      <div class="row text-center text-md-start g-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold text-primary mb-3">About Us</h5>
+          <p class="small text-light opacity-50 lh-lg">Music is our passion. We create platforms that let artists reach their core fans and listeners find elite sound quality seamlessly.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold text-primary mb-3">Quick Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li class="mb-2"><a href="#home" class="text-light opacity-50 text-decoration-none small"><i class="bi bi-chevron-right me-1"></i>Home</a></li>
+            <li class="mb-2"><a href="#albums" class="text-light opacity-50 text-decoration-none small"><i class="bi bi-chevron-right me-1"></i>Albums</a></li>
+            <li class="mb-2"><a href="#trending" class="text-light opacity-50 text-decoration-none small"><i class="bi bi-chevron-right me-1"></i>Trending</a></li>
+            <li class="mb-2"><a href="#download" class="text-light opacity-50 text-decoration-none small"><i class="bi bi-chevron-right me-1"></i>Download App</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold text-primary mb-3">Follow The Sound</h5>
+          <div class="d-flex justify-content-center justify-content-md-start gap-3">
+            <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="bg-secondary my-4">
+      <div class="text-center small text-light opacity-50">
+        © 2026 Music Website. All rights reserved. Designed with ❤️ for Music Lovers.
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
